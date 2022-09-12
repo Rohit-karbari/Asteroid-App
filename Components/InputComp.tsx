@@ -53,7 +53,7 @@ const InputComp = ({navigation}: NativeStackScreenProps<Nasa,'InputComp'>) => {
     <View style={styles.input}>
         <Text style={styles.head}>ASTROID APP</Text>
         <View style={styles.select}>
-        <SelectList data={input} setSelected={setValue}></SelectList>
+        <SelectList search={false} data={input} setSelected={setValue}></SelectList>
         </View>
         <View style={styles.submit}>
         <Button disabled={value.length === 0} title='Submit' onPress={handleSubmit}></Button>
